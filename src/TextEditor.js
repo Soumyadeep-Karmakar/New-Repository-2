@@ -91,8 +91,6 @@ export default function TextEditor() {
       theme: "snow",
       modules: { toolbar: TOOLBAR_OPTIONS },
     })
-    q.disable()
-    q.setText("Loading...")
     setQuill(q)
   }, [])
   return <div className="container" ref={wrapperRef}></div>
